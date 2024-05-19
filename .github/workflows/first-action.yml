@@ -16,9 +16,10 @@ jobs:
           elif [ "${{ vars.PROD_SIZE }}" == "custom" ]
           then
           Add_Command="$Add_Command BAKU"
+          Add_Command="$Add_Command prod size is ${{ vars.PROD_SIZE }}"
           else
           Add_Command="$Add_Command Debarshi"
           fi
           echo "$Add_Command"
-          echo "${{ vars.PROD_SIZE }}"
+          #echo "${{ vars.PROD_SIZE }}"
 
