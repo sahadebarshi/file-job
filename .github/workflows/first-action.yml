@@ -12,7 +12,7 @@ jobs:
           Add_Command="Hi"
           is_custom=1
           echo "-----------------------TESTING CONDITION----------------------------------------------------------------"
-          #list="${{ vars.PROD_SIZE }}"
+          list="${{ vars.PROD_SIZE }}"
           if [ "${{ vars.PROD_SIZE }}" != "" ]
           then
           is_custom=0
