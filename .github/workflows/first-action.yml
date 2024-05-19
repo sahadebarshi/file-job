@@ -14,15 +14,15 @@ jobs:
           echo "-----------------------TESTING CONDITION----------------------------------------------------------------"
           list="${{ vars.PROD_SIZE }}"
           #for deploy_size in $list; do 
-            if[ deploy_size != ""]
-            then
-            is_custom=0
-            echo is_custom
-            echo deploy_size
-            else
-            echo is_custom
-            echo deploy_size
-            fi
+          if[ deploy_size != ""]
+          then
+          is_custom=0
+          echo is_custom
+          echo deploy_size
+          else
+          echo is_custom
+          echo deploy_size
+          fi
           #done
           echo "--------------------------------------------------------------------------------------------------------"
           
