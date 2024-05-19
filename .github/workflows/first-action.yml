@@ -12,9 +12,8 @@ jobs:
           Add_Command="Hi"
           is_custom=1
           echo "-----------------------TESTING CONDITION----------------------------------------------------------------"
-          list="${{ vars.PROD_SIZE }}"
-          #for deploy_size in $list; do 
-          if[ "${{ vars.PROD_SIZE }}" != "" ]
+          #list="${{ vars.PROD_SIZE }}"
+          if [ "${{ vars.PROD_SIZE }}" != "" ]
           then
           is_custom=0
           echo "$is_custom"
@@ -23,7 +22,6 @@ jobs:
           echo "$is_custom"
           #echo "$deploy_size"
           fi
-          #done
           echo "--------------------------------------------------------------------------------------------------------"
           
           if [ "${{ vars.PROD_SIZE }}" == "" ]
