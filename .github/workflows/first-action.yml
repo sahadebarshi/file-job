@@ -13,7 +13,7 @@ jobs:
           is_custom=1
           echo "-----------------------TESTING CONDITION----------------------------------------------------------------"
           list="${{ vars.PROD_SIZE }}"
-          for deploy_size in $list; do 
+          #for deploy_size in $list; do 
             if[ deploy_size != ""]
             then
             is_custom=0
@@ -23,7 +23,7 @@ jobs:
             echo is_custom
             echo deploy_size
             fi
-          done
+          #done
           echo "--------------------------------------------------------------------------------------------------------"
           
           if [ "${{ vars.PROD_SIZE }}" == "" ]
