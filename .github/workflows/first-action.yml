@@ -10,6 +10,15 @@ jobs:
         run: |
           #!/bin/bash
           Add_Command="Hi"
+
+          echo "-----------------------TESTING CONDITION----------------------------------------------------------------"
+          temp_size=""
+          list="custom xlarge xxlarge"
+          for i in $list; do 
+          echo $i
+          done
+          
+          
           if [ "${{ vars.PROD_SIZE }}" == "" ]
           then
           Add_Command="NO VALUE PRESENT!!"
