@@ -10,14 +10,19 @@ jobs:
         run: |
           #!/bin/bash
           Add_Command="Hi"
-
+          is_custom=1
           echo "-----------------------TESTING CONDITION----------------------------------------------------------------"
-          temp_size=""
-          list="custom xlarge xxlarge"
-          for i in $list; do 
-          echo $i
+          list="${{ vars.PROD_SIZE }}"
+          for deploy_size in $list; do 
+          if[ deploy_size != ""]
+          is_custom=0
+          echo is_custom
+          echo deploy_size
+          else
+          echo is_custom
+          fi
           done
-          
+          echo "--------------------------------------------------------------------------------------------------------"
           
           if [ "${{ vars.PROD_SIZE }}" == "" ]
           then
