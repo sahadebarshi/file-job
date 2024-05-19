@@ -20,6 +20,7 @@ jobs:
           echo deploy_size
           else
           echo is_custom
+          echo deploy_size
           fi
           done
           echo "--------------------------------------------------------------------------------------------------------"
