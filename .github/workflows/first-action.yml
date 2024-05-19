@@ -9,6 +9,6 @@ jobs:
       - name: Printing Greeting
         run: |
           #!/bin/bash
-          Add_Command=""
-          console.log(`THIS IS ` + "BAKU")
+          Add_Command="Hi"
+          echo "$Add_Command Baku"
 
