@@ -10,5 +10,5 @@ jobs:
         run: |
           #!/bin/bash
           Add_Command="Hi"
-          echo "$Add_Command S{{ vars.PROD_SIZE }}"
+          echo "$Add_Command ${{ vars.PROD_SIZE }}"
 
