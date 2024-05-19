@@ -17,11 +17,11 @@ jobs:
           if[ "${{ vars.PROD_SIZE }}" != ""]
           then
           is_custom=0
-          echo is_custom
-          echo deploy_size
+          echo "$is_custom"
+          #echo "$deploy_size"
           else
-          echo is_custom
-          echo deploy_size
+          echo "$is_custom"
+          #echo "$deploy_size"
           fi
           #done
           echo "--------------------------------------------------------------------------------------------------------"
