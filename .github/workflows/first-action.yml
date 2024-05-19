@@ -10,5 +10,14 @@ jobs:
         run: |
           #!/bin/bash
           Add_Command="Hi"
+          if [ "${{ vars.PROD_SIZE }}" == "" ]
+          then
+          Add_Command="NO VALUE PRESENT!!"
+          elif [ "${{ vars.PROD_SIZE }}" == "custom" ]
+          then
+          Add_Command="$Add_Command echo BAKU"
+          else
+          Add_Command="$Add_Command echo Debarshi"
+          fi
           echo "$Add_Command ${{ vars.PROD_SIZE }}"
 
